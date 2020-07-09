@@ -67,4 +67,4 @@ echo vsprintf($company, $array); /*retornando as strings
  */
 fullStackPHPClassSession("var_dump", __LINE__);
 
-var_dump($array);
+var_dump($array,$hello,$company);
