@@ -63,11 +63,19 @@ if ($a || $b || $c || $d || $e){
  */
 fullStackPHPClassSession("tipo callback", __LINE__);
 
-
+$newCode = "<p class='tag'>Novo codigo</p>";
 $code = "<article><h1>Um call User function</h1></article>";
 $codeClear = call_user_func("strip_tags", $code);
 var_dump($code, $codeClear);
+
 /**
  * [ outros tipos ] string | array | objeto | numérico | null
  */
 fullStackPHPClassSession("outros tipos", __LINE__);
+
+//function
+$codeMore = function($newCode){
+    var_dump($newCode);
+};
+
+$codeMore("valore que colocamos na funcion");
