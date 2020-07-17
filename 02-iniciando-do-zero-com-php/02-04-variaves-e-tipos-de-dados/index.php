@@ -16,7 +16,7 @@ echo "<p>{$userFirstName} {$userLastName} <span class='tag'>Tem {$userAge}</span
 
 //variavel variavel
 $company = "UpInside";
-$$company = "Treinamentos";
+$$company = "Treinando";
 echo "<h3>{$company} {$UpInside}</h3>";
 
 $calcA = 10;
@@ -64,18 +64,42 @@ if ($a || $b || $c || $d || $e){
 fullStackPHPClassSession("tipo callback", __LINE__);
 
 $newCode = "<p class='tag'>Novo codigo</p>";
+
 $code = "<article><h1>Um call User function</h1></article>";
 $codeClear = call_user_func("strip_tags", $code);
-var_dump($code, $codeClear);
 
-/**
- * [ outros tipos ] string | array | objeto | numérico | null
- */
-fullStackPHPClassSession("outros tipos", __LINE__);
+var_dump($code, $codeClear);
 
 //function
 $codeMore = function($newCode){
     var_dump($newCode);
 };
 
-$codeMore("valore que colocamos na funcion");
+$codeMore('return');
+
+/**
+ * [ outros tipos ] string | array | objeto | numérico | null
+ */
+fullStackPHPClassSession("outros tipos", __LINE__);
+
+$string = "ola mundo";
+$array = [$string];
+$object = new StdClass();
+$object->hello = $string;
+$null = null;
+$int = 10;
+$float = 10.1;
+
+var_dump([
+    $string,
+    $array,
+    $object,
+    $null,
+    $int,
+    $float
+]);
+
+$name = "breno";
+$name = (int)true;
+
+echo $name;

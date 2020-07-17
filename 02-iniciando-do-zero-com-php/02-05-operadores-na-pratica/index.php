@@ -8,7 +8,9 @@ echo fullStackPHPClassName("02.05 - Operadores na prática");
  */
 fullStackPHPClassSession("atribuição", __LINE__);
 
-
+    $a = "bom dia,";
+    $a .= "Breno";
+    echo "$a";
 /**
  * [ comparação ] https://php.net/manual/pt_BR/language.operators.comparison.php
  */
