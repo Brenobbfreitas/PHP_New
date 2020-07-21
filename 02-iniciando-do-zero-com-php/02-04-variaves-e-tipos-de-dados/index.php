@@ -39,10 +39,13 @@ fullStackPHPClassSession("tipo boleano", __LINE__);
 $true = true;
 $false = false;
 
-var_dump($true, $false);
+//var_dump($true, $false);
+
+$userAge = 44;
 
 $bestAge = ($userAge > 50);
-var_dump($bestAge);
+$bool = $bestAge == true ? var_dump($bestAge) : var_dump($bestAge);
+echo $bool;
 
 $a = 0;
 $b = 0.0;
@@ -53,9 +56,9 @@ $e = null;
 var_dump($a, $b, $c, $d, $e);
 
 if ($a || $b || $c || $d || $e){
-    var_dump(true);
+   var_dump(true);
 }else{
-    var_dump(false);
+   var_dump(false);
 }
 
 /**
@@ -81,7 +84,7 @@ $codeMore('return');
  * [ outros tipos ] string | array | objeto | numérico | null
  */
 fullStackPHPClassSession("outros tipos", __LINE__);
-
+/**
 $string = "ola mundo";
 $array = [$string];
 $object = new StdClass();
@@ -103,3 +106,30 @@ $name = "breno";
 $name = (int)true;
 
 echo $name;
+ */
+
+/**for ($i=0; $i <= 10; $i++){
+    echo $i."<br>";
+}
+*/
+$vetor = array("breno", "nicoly", "pato", "alberto");
+
+foreach ($vetor as $name){
+    echo $name."<br>";
+}
+
+$stopLoop = 9;
+
+for($i=0; ;$i++){
+    if($i == $stopLoop){
+        break;
+    }
+    echo $i."<br>";
+}
+
+for($i=0; $i <= 11; $i++){
+    if ($i % 2 == 0){
+        continue;
+    }
+    echo $i."<br>";
+}

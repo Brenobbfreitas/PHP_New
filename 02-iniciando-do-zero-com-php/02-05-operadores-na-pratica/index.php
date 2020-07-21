@@ -16,6 +16,7 @@ fullStackPHPClassSession("atribuição", __LINE__);
  */
 fullStackPHPClassSession("comparação", __LINE__);
 
+var_dump(0 == "a");
 
 /**
  * [ lógicos ] https://php.net/manual/pt_BR/language.operators.logical.php
