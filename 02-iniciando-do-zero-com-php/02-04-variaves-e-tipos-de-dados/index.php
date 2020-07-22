@@ -83,7 +83,7 @@ $codeMore('return');
 /**
  * [ outros tipos ] string | array | objeto | numérico | null
  */
-fullStackPHPClassSession("outros tipos", __LINE__);
+fullStackPHPClassSession("outros tipos, repetidor 'for'", __LINE__);
 /**
 $string = "ola mundo";
 $array = [$string];

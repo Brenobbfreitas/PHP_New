@@ -8,9 +8,42 @@ echo fullStackPHPClassName("02.05 - Operadores na prática");
  */
 fullStackPHPClassSession("atribuição", __LINE__);
 
-    $a = "bom dia,";
-    $a .= "Breno";
-    echo "$a";
+    $operatorA = 5;
+    $operatorS = [
+      "A += 5" => $operatorA += 5,
+        "A -= 5" => $operatorA -= 5,
+        "A *= 5" => $operatorA *= 5,
+        "A /= 5" => $operatorA /=5
+    ];
+
+    var_dump($operatorS);
+
+    $incrementA = 5;
+    $decrementA = 5;
+    $increment = [
+        "pos-increment" => $incrementA++,
+        "res-increment" => $incrementA,
+        "pre-increment" => ++$incrementA,
+        "pos-decrement" => $decrementA--,
+        "res-decrement" => $decrementA,
+        "pre-decrement" => --$decrementA
+    ];
+
+    var_dump($increment);
+
+    $relatadeA = 5;
+    $relatadeB = "5";
+    $relatadeC = 10;
+    $relatadeD = 10;
+
+    $relatade = [
+      "A == B" => $relatadeA == $relatadeB,
+      "A == C" => $relatadeA == $relatadeC,
+        "D === C" => $relatadeC === $relatadeD
+    ];
+
+    var_dump($relatade);
+
 /**
  * [ comparação ] https://php.net/manual/pt_BR/language.operators.comparison.php
  */
