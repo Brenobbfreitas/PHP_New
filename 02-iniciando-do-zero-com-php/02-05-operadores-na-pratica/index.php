@@ -31,33 +31,56 @@ fullStackPHPClassSession("atribuição", __LINE__);
 
     var_dump($increment);
 
-    $relatadeA = 5;
-    $relatadeB = "5";
-    $relatadeC = 10;
-    $relatadeD = 10;
 
-    $relatade = [
-      "A == B" => $relatadeA == $relatadeB,
-      "A == C" => $relatadeA == $relatadeC,
-        "D === C" => $relatadeC === $relatadeD
-    ];
 
-    var_dump($relatade);
 
 /**
  * [ comparação ] https://php.net/manual/pt_BR/language.operators.comparison.php
  */
 fullStackPHPClassSession("comparação", __LINE__);
 
-var_dump(0 == "a");
+$relatadeA = 5;
+$relatadeB = "5";
+$relatadeC = 10;
+$relatadeD = 10;
+
+
+$relatade = [
+    "A == B" => $relatadeA == $relatadeB,
+    "A == C" => $relatadeA == $relatadeC,
+    "D === C" => $relatadeC === $relatadeD,
+    " A != C" => $relatadeA != $relatadeB
+];
+
+var_dump($relatade);
 
 /**
  * [ lógicos ] https://php.net/manual/pt_BR/language.operators.logical.php
  */
 fullStackPHPClassSession("lógicos", __LINE__);
 
+    $logicA = false;
+    $logicB = true;
+    $logic = [
+      "A && B" => ($logicA && $logicB),
+        "A || B" => ($logicA || $logicB),
+        " ! A " => (!$logicA),
+        " ! B " => (!$logicB)
+    ];
+
+    var_dump($logic);
 
 /**
  * [ aritiméticos ] https://php.net/manual/pt_BR/language.operators.arithmetic.php
  */
 fullStackPHPClassSession("aritiméticos", __LINE__);
+ $calcA = 5;
+ $calcB = 10;
+ $calc = [
+     "a + b" => ($calcA + $calcB),
+     "a - b" => ($calcA - $calcB),
+     "a * b" => ($calcA * $calcB),
+     "a / b" => ($calcA / $calcB),
+    "a % b" => ($calcA % $calcB)
+ ];
+ var_dump($calc);
