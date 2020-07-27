@@ -8,12 +8,12 @@ echo fullStackPHPClassName("02.05 - Operadores na prática");
  */
 fullStackPHPClassSession("atribuição", __LINE__);
 
-    $operatorA = 5;
-    $operatorS = [
-      "A += 5" => $operatorA += 5,
-        "A -= 5" => $operatorA -= 5,
-        "A *= 5" => $operatorA *= 5,
-        "A /= 5" => $operatorA /=5
+    $operadorA = 5;
+    $operadorS = [
+      "A += 5" => $operadorA += 5,
+        "A -= 5" => $operadorA -= 5,
+        "A *= 5" => $operadorA *= 5,
+        "A /= 5" => $operadorA /=5
     ];
 
     var_dump($operatorS);
