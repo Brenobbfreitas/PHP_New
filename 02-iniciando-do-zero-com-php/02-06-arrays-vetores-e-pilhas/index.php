@@ -40,6 +40,7 @@ $arrayAssoc = [
     "baixo" => "jeferson"
 ];
 $arrayAssoc["name_band"] = "beatles";
+$arrayAssoc["patrocinio"] = "coca-cola";
 
 
 var_dump($arrayAssoc);
@@ -57,8 +58,50 @@ $instrument = [
 ];
 var_dump($instrument);
 
+var_dump([
+    "brian" => $brian,
+    "angus" => $angus
+]);
+
 /**
  * [ array access ] foreach(array as item) || foreach(array as key => value)
  */
 fullStackPHPClassSession("array access", __LINE__);
 
+$garotaSafada = [
+    "vocal" => "Bruno",
+    "violao" => "chimbinha",
+    "2voz" => "marrone",
+    "baixo" => "jeferson"
+];
+
+$calcinhaPreta  =[
+    "vocal" => "wesley",
+    "violao"=> "hudson",
+    "2voz" => "jaqueline",
+    "baixo" => "lineu"
+];
+
+echo "<p>O vocal da banda é {$garotaSafada["vocal"]} e junto com {$garotaSafada{"violao"}} fazem um som</p>";
+
+$bandasForro = [
+    "garotaSafada" => $garotaSafada,
+    "calcinhaPreta" => $calcinhaPreta
+];
+
+var_dump($bandasForro);
+
+echo "<p>{$bandasForro['calcinhaPreta']['vocal']}</p>";
+
+foreach ($calcinhaPreta as $item){
+    echo "<p>{$item}</p>";
+}
+
+foreach ($calcinhaPreta as $key => $value){
+    echo "<p>{$value} is a {$key} of bands!</p>";
+}
+
+foreach ($bandasForro as $bandaForre){
+    var_dump($bandasForro);
+    
+}
