@@ -103,5 +103,5 @@ foreach ($calcinhaPreta as $key => $value){
 
 foreach ($bandasForro as $bandaForre){
     var_dump($bandasForro);
-    
+
 }
