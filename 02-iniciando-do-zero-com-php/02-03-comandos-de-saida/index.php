@@ -14,7 +14,7 @@ fullStackPHPClassSession("echo", __LINE__);
     echo "<p> faltam 2 {$day}s</p>";
     echo "<h3>{$hello} {$name}</h3>";
     echo "<h3>" . $hello . " " . $name ."</h3>";
-
+    echo "$name";
 ?>
 
 <?php
