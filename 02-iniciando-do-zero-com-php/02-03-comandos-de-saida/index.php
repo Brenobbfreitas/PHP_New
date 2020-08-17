@@ -8,9 +8,11 @@ fullStackPHPClassName("02.03 - Comandos de saída");
 fullStackPHPClassSession("echo", __LINE__);
     $hello = "Olá user";
     $name = "<span class='tag'>PHP Coder</span>";
-
+    $newString = "ola, minha string se chama: ";
+    $nameNewS = "Breno";
     $day = "dia";
 
+    echo "<p>{$newString}{$nameNewS}</p>";
     echo "<p> faltam 2 {$day}s</p>";
     echo "<h3>{$hello} {$name}</h3>";
     echo "<h3>" . $hello . " " . $name ."</h3>";
