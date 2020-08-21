@@ -46,11 +46,11 @@ var_dump($myCart);
 fullStackPHPClassSession("generators", __LINE__);
 
 
-$iterator = 4000
+$iterator = 4000;
 
 
 function generatorDate($days){
-    
+
     for($day = 1; $day < $days; $day++){
         yield date("d/m/y", strtotime("+{$day}days"));
     }
