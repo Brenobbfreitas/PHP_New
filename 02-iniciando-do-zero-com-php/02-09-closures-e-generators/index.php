@@ -46,7 +46,7 @@ var_dump($myCart);
 fullStackPHPClassSession("generators", __LINE__);
 
 
-$iterator = 4000;
+$iterator = 100;
 
 
 function generatorDate($days){
