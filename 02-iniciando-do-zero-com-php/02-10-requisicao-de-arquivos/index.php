@@ -34,3 +34,7 @@ fullStackPHPClassSession("require, require_once", __LINE__);
 require __DIR__ . "/config.php";
 
 echo "<h1>". Course ."</h1>";
+
+var_dump(require  __DIR__ . "/config.php");
+
+var_dump(require_once __DIR__. "/config.php");
