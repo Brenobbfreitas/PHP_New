@@ -38,3 +38,5 @@ echo "<h1>". Course ."</h1>";
 var_dump(require  __DIR__ . "/config.php");
 
 var_dump(require_once __DIR__. "/config.php");
+
+//require algum arquivo de configuração para rodar a aplicação, dependecia, função
