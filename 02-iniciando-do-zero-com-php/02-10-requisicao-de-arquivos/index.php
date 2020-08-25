@@ -22,7 +22,7 @@ $profile->company = "Google";
 $profile->email = "Gabriel@gmail.com";
 include __DIR__. "/profile.php";
 
-
+// __DIR__ ele pega o caminho absoluto do arquivo
 //include_once: geralmente usado para inserir cofigurações; n]ap gera conflito
 var_dump($profile);
 /*
